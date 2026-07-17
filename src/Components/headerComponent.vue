@@ -1,0 +1,82 @@
+<script setup>
+</script>
+<template>
+    <header>
+        <h1>
+            <img src="/public/logo.png" alt="logo.png">
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <router-link to="/">Home</router-link>
+                </li>
+                <li>
+                    <router-link to="/avaliacoes">Avaliações</router-link>
+                </li>
+                <li>
+                    <router-link to="/ranking">Ranking</router-link>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</template>
+<style scoped>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F1EB;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+
+    & h1 {
+        margin: 20px 50px;
+        cursor: pointer;
+
+        & img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        & img:hover {
+            transform: scale(1.1);
+            transition: all ease .7s;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    & ul {
+        display: flex;
+        list-style: none;
+        margin: 0 20px;
+        padding: 0;
+
+        & li {
+            cursor: pointer;
+            margin: 10px 25px;
+            font-size: 20px;
+            transition: all ease.5s;
+            & a {
+                text-decoration: none;
+                color: #6B4A2F;
+                padding: 5px 10px;
+                border-radius: 20px;
+                transition: all ease.5s;
+            }
+
+            & a.router-link-exact-active {
+                background: #6B4A2F;
+                color: #F4F1EB;
+                padding: 5px 10px;
+            }
+        }
+            & a:hover {
+                background-color: #DCC8B0;
+                scale: 1.05;
+                color: #1A1A1A;
+
+        }
+    }
+}
+</style>
