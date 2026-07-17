@@ -3,18 +3,21 @@
 <template>
     <header>
         <h1>
+            <router-link to="/">
             <img src="/public/logo.png" alt="logo.png">
+
+            </router-link>
         </h1>
         <nav>
             <ul>
                 <li>
-                    <router-link to="/">Home</router-link>
+                    <router-link to="/"> <i class="mdi mdi-home"></i> Home</router-link>
                 </li>
                 <li>
-                    <router-link to="/avaliacoes">Avaliações</router-link>
+                    <router-link to="/avaliacoes"> <i class="mdi mdi-pencil"></i> Avaliações </router-link>
                 </li>
                 <li>
-                    <router-link to="/ranking">Ranking</router-link>
+                    <router-link to="/ranking"> <i class="mdi mdi-star"></i> Ranking</router-link>
                 </li>
             </ul>
         </nav>
