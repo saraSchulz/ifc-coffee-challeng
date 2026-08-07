@@ -27,14 +27,49 @@
 <style scoped>
 .bannerhome{
   display: flex;
-  max-width: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   & .left{
     display: flex;
     flex-direction: column;
+    align-items: left;
+    width: 50%;
+    margin: 50px 10%;
+    & p{
+      font-size: 40px;
+      margin: 10px 30px;
+    }
+    & h2{
+      font-size: 60px;
+      margin: 10px 30px;
+    }
+    & .btns{
+      display: flex;
+      margin: 10px 30px;
+      & button{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #6f4e37;
+        color: white;
+        border: none;
+        cursor: pointer;
+        & a{
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+          & i{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
   }
   & .right{
     width: 50%;
     margin: 10px;
+    align-items: right;
     & h1{
       & img{
         width: 50%;

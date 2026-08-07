@@ -1,4 +1,4 @@
-export const coffees = [
+const coffees = [
   {
     id: 1,
     nome: "Bourbon Amarelo",
@@ -65,6 +65,7 @@ export const coffees = [
     data: "13/07/2026",
   }
 ];
+
 export function calcularMedia(cafe) {
   const soma =
     cafe.aroma +
@@ -76,5 +77,4 @@ export function calcularMedia(cafe) {
   return (soma / 5).toFixed(1);
 }
 
-
-
+export { coffees };
